@@ -10,16 +10,23 @@ Este projeto implementa um **notebook AutoML** capaz de receber **qualquer base 
 - Tratamento de **dados faltantes** (substituição por moda/mais frequente).  
 - Codificação de variáveis categóricas (`LabelEncoder`).  
 - Normalização de variáveis numéricas (`StandardScaler`).  
-- Teste automático de **5 algoritmos de ML**:
+- Teste automático de **6 algoritmos de ML**:
   - Regressão Linear  
   - Decision Tree (critério = `"gini"`)  
   - Decision Tree (critério = `"entropy"`)  
   - Naive Bayes  
-  - KNN  
-- Seleção do **melhor modelo** com base em métricas de avaliação.  
-- Visualizações gráficas:  
-  - 📉 Para classificação: Matriz de Confusão + Gráfico comparando acurácias + Métricas: Precisão, Recall e F1-Score.  
-  - 📈 Para regressão: Gráfico **y verdadeiro vs y predito**.  
+  - KNN
+  - XGBoost - Classifier
+
+- **Otimização automática de hiperparâmetros** para cada modelo utilizando `GridSearchCV`.
+<img width="260" alt="image" src="https://github.com/user-attachments/assets/081a2a41-8fce-4be0-9694-099fde92c116" />
+  
+## Seleção do **melhor modelo** com base em métricas de avaliação.
+
+### Classificação: 
+- Acurácia
+### Regressão:
+- R²
 
 ---
 
@@ -27,6 +34,8 @@ Este projeto implementa um **notebook AutoML** capaz de receber **qualquer base 
 
 ```
 .
+└── docs/              # Pasta com fotos dos gráficos
+├── datasets/          # Datasets testados de exemplo
 ├── ia-preditiva.ipynb # Notebook principal
 └── README.md          # Este arquivo
 ```
@@ -39,13 +48,14 @@ Este projeto implementa um **notebook AutoML** capaz de receber **qualquer base 
 - `scikit-learn`
 - `matplotlib`
 - `seaborn`
+- `xgboost`
 
 ---
 
 ## Exemplo de Saída
 
-### 🔹 Classificação
-- **Matriz de Confusão** (sem gridlines):  
+### Classificação
+- **Matriz de Confusão**:  
 <img src="docs/matriz_confusao_example.png" alt="" width="400"/>
 
 
@@ -53,10 +63,10 @@ Este projeto implementa um **notebook AutoML** capaz de receber **qualquer base 
 <img src="docs/comparacao_modelos_example.png" alt="" width="400"/>
 
 
-- **Comparação de Modelos (Métricas):**
+- **Comparação de Classes (Métricas):**
 <img src="docs/metricas_example.png" alt="" width="400"/>
 
 
 ---
 
-✍️ Desenvolvido por: **[Rafael Cruz]**
+Desenvolvido por: [**Rafael Cruz**](https://github.com/RafaelBarretoCruz)
