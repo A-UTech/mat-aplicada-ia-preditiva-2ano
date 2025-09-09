@@ -28,6 +28,8 @@ Este projeto implementa um **notebook AutoML** capaz de receber **qualquer base 
 ### Regressão:
 - R²
 
+### >>  O notebook sempre separa 20% para teste de TODOS os modelos! <<
+
 ---
 
 ## Estrutura do Projeto
