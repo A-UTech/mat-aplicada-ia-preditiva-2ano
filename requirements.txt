@@ -1,0 +1,11 @@
+jupyter
+nbconvert
+nbformat
+papermill
+pandas
+numpy
+matplotlib
+scikit-learn
+seaborn
+xgboost
+yellowbrick
