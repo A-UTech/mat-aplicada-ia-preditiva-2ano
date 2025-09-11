@@ -39,18 +39,24 @@ Este projeto implementa um **notebook AutoML** capaz de receber **qualquer base 
 └── docs/              # Pasta com fotos dos gráficos
 ├── datasets/          # Datasets testados de exemplo
 ├── ia-preditiva.ipynb # Notebook principal
+├── requirements.txt   # Requisitos para rodar o ambiente.
 └── README.md          # Este arquivo
 ```
 
 ---
 
 ### Dependências necessárias
+- `jupyter`
+- `nbconvert`
+- `nbformat`
+- `papermill`
 - `pandas`
 - `numpy`
-- `scikit-learn`
 - `matplotlib`
+- `scikit-learn`
 - `seaborn`
 - `xgboost`
+- `yellowbrick`
 
 ---
 
