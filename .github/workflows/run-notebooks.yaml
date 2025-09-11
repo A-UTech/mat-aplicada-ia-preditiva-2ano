@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install nbconvert nbformat papermill jupyter
+          pip install -r requirements.txt
 
       - name: Create outputs folder
         run: mkdir -p outputs
