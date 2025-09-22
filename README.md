@@ -10,12 +10,15 @@ Este projeto implementa um **notebook AutoML** capaz de receber **qualquer base 
 - Tratamento de **dados faltantes** (substituição por moda/mais frequente).  
 - Codificação de variáveis categóricas (`LabelEncoder`).  
 - Normalização de variáveis numéricas (`StandardScaler`).  
-- Teste automático de **6 algoritmos de ML**:
-  - Regressão Linear  
+- Teste automático de **7 algoritmos de ML**:
+- 2 algoritmos de regressão: 
+  - Regressão Linear
+  - KNN Regressor
+- 5 Algoritmos de classificação:
   - Decision Tree (critério = `"gini"`)  
   - Decision Tree (critério = `"entropy"`)  
   - Naive Bayes  
-  - KNN
+  - KNN - Classifier
   - XGBoost - Classifier
 
 - **Otimização automática de hiperparâmetros** para cada modelo utilizando `GridSearchCV`.
@@ -25,11 +28,23 @@ Este projeto implementa um **notebook AutoML** capaz de receber **qualquer base 
 
 ### Classificação: 
 - Acurácia
+
+#### Exemplo
+- KNN - 92% de acurácia
+- Naive Bayes - 87% de acurácia
+---
+#### Campeão: KNN 🏆
+---
+
 ### Regressão:
 - R²
 
-### >>  O notebook sempre separa 20% para teste de TODOS os modelos! <<
+#### Exemplo
+- Regressão Linear - 67% de acurácia
+- KNN Regressor - 87% de acurácia
 
+---
+#### Campeão: KNN Regressor🏆
 ---
 
 ## Estrutura do Projeto
@@ -45,28 +60,45 @@ Este projeto implementa um **notebook AutoML** capaz de receber **qualquer base 
 ---
 
 ### Dependências necessárias
+- `jupyter`
+- `nbconvert`
+- `nbformat`
+- `papermill`
 - `pandas`
 - `numpy`
-- `scikit-learn`
 - `matplotlib`
+- `scikit-learn`
 - `seaborn`
 - `xgboost`
+- `yellowbrick`
 
 ---
 
 ## Exemplo de Saída
 
 ### Classificação
-- **Matriz de Confusão**:  
-<img src="docs/matriz_confusao_example.png" alt="" width="400"/>
-
 
 - **Comparação de Modelos (Acurácia):**
 <img src="docs/comparacao_modelos_example.png" alt="" width="400"/>
 
+- **Matriz de Confusão**:  
+<img src="docs/matriz_confusao_example.png" alt="" width="400"/>
+
 
 - **Comparação de Classes (Métricas):**
 <img src="docs/metricas_example.png" alt="" width="400"/>
+
+### Regressão
+
+- **Comparação de Modelos (Regressão):**
+<img src="docs/comparacao_modelos_r2_example.png" alt="" width="400"/>
+
+- **Resíduos dos Modelos**:  
+<img src="docs/residuos_example.png" alt="" width="400"/>
+
+- **Distribuição dos Resíduos**:
+<img src="docs/distribuicao_residuos_example.png" alt="" width="400"/>
+
 
 
 ---
