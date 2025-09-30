@@ -40,8 +40,8 @@ Este projeto implementa um **notebook AutoML** capaz de receber **qualquer base 
 - R²
 
 #### Exemplo
-- Regressão Linear - 67% de acurácia
-- KNN Regressor - 87% de acurácia
+- Regressão Linear - 67% de R²
+- KNN Regressor - 87% de R²
 
 ---
 #### Campeão: KNN Regressor🏆
@@ -50,12 +50,12 @@ Este projeto implementa um **notebook AutoML** capaz de receber **qualquer base 
 ## Estrutura do Projeto
 
 ```
-.
-└── docs/              # Pasta com fotos dos gráficos
 ├── datasets/          # Datasets testados de exemplo
+└── docs/              # Pasta com fotos dos gráficos
+├── pickles/           # Pasta com pickles (modelo_<nome>_<base>.pkl)
 ├── ia-preditiva.ipynb # Notebook principal
 ├── requirements.txt   # Requisitos para rodar o ambiente.
-└── README.md          # Este arquivo
+└── README.md          # Documentação sobre o notebook todo
 ```
 
 ---
