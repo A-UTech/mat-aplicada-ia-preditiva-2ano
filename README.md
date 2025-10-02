@@ -1,3 +1,6 @@
+# Requisitos atendidos nesse repositório:
+![requisitos-mat-aplicada-repo.png](docs/requisitos-mat-aplicada-repo.png)
+![requisitos-cd-mat-aplicada-repo.png](docs/requisitos-cd-mat-aplicada-repo.png)
 # AutoML
 
 Este projeto implementa um **notebook AutoML** capaz de receber **qualquer base de dados tabular** (CSV), realizar o pré-processamento adequado e testar automaticamente diferentes algoritmos de **Machine Learning**, escolhendo o melhor modelo de acordo com as métricas de avaliação.
